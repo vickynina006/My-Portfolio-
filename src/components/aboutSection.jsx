@@ -55,7 +55,7 @@ export default function AboutSection() {
             specifically to your unique needs and requirements.
           </p>
         </div>
-        <div className="flex flex-wrap gap-8 py-10 justify-center">
+        <div className="flex flex-wrap gap-8 py-10 justify-center lgx:px-16">
           <AboutButton title="Web Development" img={heartIcon} />
           <AboutButton title="Graphic Designs" img={star1} />
           <AboutButton title="Responsive Designs" img={star2} />
