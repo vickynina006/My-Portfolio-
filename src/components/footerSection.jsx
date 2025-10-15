@@ -5,7 +5,7 @@ import spiral from "../assets/spiral2.svg";
 
 export default function FooterSection() {
   return (
-    <footer>
+    <footer id="contact">
       <WaveMobileTop classname=" text-darkbg w-full h-max  lg:hidden rotate-180" />
       <WaveDesktopTop classname="hidden text-darkbg w-full  h-max lg:flex " />
       <div className="relative font-bricolage bg-darkbg gap-10  flex flex-col px-5 items-center py-16 md:px-14">
@@ -17,7 +17,17 @@ export default function FooterSection() {
           Got a project in mind? Let's create something great. We can transform
           that idea into real product.
         </p>
-        <Button bg="bg-white">Contact Me</Button>
+        <Button
+          animate={{ scale: [1, 0.96, 1, 0.96, 1] }}
+          transition={{
+            repeat: Infinity,
+            duration: 2,
+            ease: "easeInOut",
+          }}
+          bg="bg-white"
+        >
+          Message on whatsapp
+        </Button>
         <div className="w-full  h-[0.1rem]  bg-gray-400 mt-10"></div>
         <img
           src={spiral}
@@ -32,7 +42,7 @@ export default function FooterSection() {
             <FooterIcons icon="fab fa-telegram" />
             <FooterIcons icon="fab fa-linkedin" />
           </span>
-          <p>© 2025 Victoria. All rIghts reserved.</p>
+          <p>© 2025. Built by Victoria.</p>
         </div>
       </div>
     </footer>

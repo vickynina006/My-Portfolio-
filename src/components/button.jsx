@@ -1,11 +1,16 @@
-export default function Button({ href, children, bg }) {
+import { motion } from "framer-motion";
+
+export default function Button({ href, children, bg, ...props }) {
   return (
-    <a
+    <motion.a
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 500 }}
       href={href}
+      {...props}
       className={`cursor-pointer inline-flex  py-3.5 px-5 rounded-lg font-medium  outline outline-1 outline-blacky ${bg} shadow-buttonshadow2 hover:bg-slate-100`}
     >
       {children}
-    </a>
+    </motion.a>
   );
 }
 

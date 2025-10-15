@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 export default function HeroSideDivs({
   title,
   bgColor = "bg-customBlue",
@@ -11,9 +12,13 @@ export default function HeroSideDivs({
   img,
   flexCol = "flex-col",
   imgSize = "w-[5.3rem] h-[5.3rem]",
+  ...props
 }) {
   return (
-    <div className={`hidden py-20 gap-28 ${flexCol}  w-[15%] lg:flex`}>
+    <motion.div
+      {...props}
+      className={`hidden py-20 gap-28 ${flexCol}  w-[15%] lg:flex`}
+    >
       <div className={`flex relative justify-center `}>
         <div
           className={`relative inline-block px-4 py-2.5  text-[0.7rem] font-semibold rounded-full outline outline-1 outline-blacky transform ${rotate} ${bgColor} lgx:text-[0.95rem]`}
@@ -26,6 +31,6 @@ export default function HeroSideDivs({
       <div className={`flex justify-center`}>
         <img src={img} alt="" className={`${imgSize}`} />
       </div>
-    </div>
+    </motion.div>
   );
 }

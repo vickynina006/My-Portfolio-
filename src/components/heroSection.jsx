@@ -12,15 +12,41 @@ import HeroAbout from "./heroAbout";
 import cvIcon from "../assets/cv-icon.svg";
 import aboutIcon from "../assets/about-icon.svg";
 import contactIcon from "../assets/contact-icon.svg";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
+  const heroAboutdata = [
+    {
+      src: cvIcon,
+      title: "My CV",
+      description: "Check out some professional details about me ",
+      bg: "bg-buttonBlue",
+    },
+    {
+      src: aboutIcon,
+      title: "My Toolbox",
+      description: "Check out the tools I build with ",
+      bg: "bg-buttonYellow",
+      href: "#tools",
+    },
+    {
+      src: contactIcon,
+      title: "Contact Me",
+      description: "Get in touch with me ",
+      bg: "bg-buttonGreen",
+      href: "#contact",
+    },
+  ];
+
   const h1Styles =
-    "text-blacky text-4xl sm:text-[2.7rem] md:text-6xl  lgx:text-[5.18rem]  font-medium text-center";
+    "text-blacky text-3xl smx:text-[2.7rem]  md:text-6xl lgx:text-[5.18rem]  font-semibold text-center overflow-hidden";
 
   return (
-    <section className="flex flex-col">
-      <div className="flex bg-backgroundpurple px-2 pb-48 md:px-5 lg:py-16 ">
+    <section className="flex  flex-col">
+      <div className="flex bg-backgroundpurple smx:px-2 pb-48 md:px-5 lg:py-16 ">
         <HeroSideDivs
+          animate={{ scale: [0.97, 1, 0.97, 1, 0.97] }}
+          transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
           title="Web Development"
           src={sparkle}
           src2={doubleLine}
@@ -28,32 +54,73 @@ export default function HeroSection() {
         />
 
         <div className="w-full px-2  lg:w-[70%] ">
-          <div className="flex flex-col flex-wrap space-y-2 justify-center items-center pt-2 sm:space-y-0 sm:flex-row">
-            <div className="flex flex-col-reverse  items-center sm:flex-row">
-              <h1 className={h1Styles}>Hello!</h1>
-              <div className="flex overflow-hidden mx-auto my-4 w-16 h-16 outline outline-1 bg-slate-500 rounded-full outline-blacky sm:m-3 lg:w-24 lg:h-24">
-                <img
-                  src={profilepic}
-                  alt=""
-                  className="w-16 h-16 object-cover  lg:w-24 lg:h-24"
-                />
+          <div className="smx:space-y-3 ">
+            <div className="flex flex-col flex-wrap smx:space-y-5 justify-center items-center pt-2 md:space-y-0 sm:flex-row">
+              <div className="flex flex-col-reverse  items-center sm:flex-row">
+                <div className="overflow-hidden">
+                  <motion.h1
+                    initial={{ width: "0%" }}
+                    animate={{ width: "100%" }}
+                    transition={{ duration: 1 }}
+                    className={h1Styles}
+                  >
+                    Hello,
+                  </motion.h1>
+                </div>
+
+                <motion.div
+                  initial={{ scale: 0.5, opacity: 1 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{
+                    duration: 0.8,
+                    ease: "easeInOut",
+                  }}
+                  className="flex overflow-hidden mx-auto my-4 w-24 h-24 outline outline-1 bg-slate-500 rounded-full outline-blacky sm:m-3 sm:h-16 sm:w-16   lg:w-24 lg:h-24"
+                >
+                  <img
+                    src={profilepic}
+                    alt="profile picture"
+                    className="w-full h-full object-cover "
+                  />
+                </motion.div>
+              </div>
+              <div className="overflow-hidden">
+                <motion.h1
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 0.7 }}
+                  className={h1Styles}
+                >
+                  {" "}
+                  I'm Victoria,
+                </motion.h1>
               </div>
             </div>
-
-            <h1 className={h1Styles}> I'm Victoria,</h1>
+            <motion.h1
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1 }}
+              className={`${h1Styles} leading-tight`}
+            >
+              a Frontend Developer.
+            </motion.h1>
           </div>
-          <h1 className={`${h1Styles} leading-normal`}>
-            a Frontend Developer.
-          </h1>
 
-          <p className="pt-7 text-blacky text-2xl text-center leading-relaxed">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
+            className="pt-4 text-blacky text-2xl text-center leading-relaxed md:pt-7"
+          >
             I strive to create meaningful and engaging web experiences that
             foster a positive culture through thoughtful frontend development
             and design.
-          </p>
+          </motion.p>
         </div>
 
         <HeroSideDivs
+          animate={{ scale: [1, 0.97, 1, 0.97, 1] }}
+          transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
           title="Responsive Design"
           bgColor="bg-customPink"
           rotate="rotate-12"
@@ -74,26 +141,10 @@ export default function HeroSection() {
           <WaveMobile classname=" text-backgroundpurple w-full h-max lg:hidden" />
           <WaveDesktop classname="hidden text-backgroundpurple w-full  h-44  lg:flex" />
         </div>
-        <div className=" flex px-7 pb-24 -mt-36  gap-10 flex-col md:flex-row md:-mt-44 lg:-mt-48 lgx:px-24 ">
-          {/* {HeroAboutdata.map((heroAboutItem) => (
-            <HeroAbout {...heroAboutItem} />
-          ))} */}
-          <HeroAbout
-            src={cvIcon}
-            title="My CV"
-            description="Check out some professional details about me "
-          />
-          <HeroAbout
-            src={aboutIcon}
-            title="My Toolbox"
-            description="Discover some interesting facts about me! "
-            bg="bg-buttonYellow"
-          />
-          <HeroAbout
-            src={contactIcon}
-            title="Contact Me"
-            description="If you like my work, I am here to bring your ideas to life."
-          />
+        <div className=" flex px-3 pb-20 -mt-36  gap-10 flex-col smx:px-7 md:flex-row md:-mt-36 lg:-mt-48 lgx:px-24 ">
+          {heroAboutdata.map((heroAboutItem, i) => (
+            <HeroAbout key={i} heroAboutdata={heroAboutItem} i={i} />
+          ))}
         </div>
       </div>
     </section>
