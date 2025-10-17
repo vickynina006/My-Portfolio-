@@ -2,6 +2,13 @@ import WaveMobileTop, { WaveDesktopTop } from "./waveSvg";
 import messageIcon from "../assets/message-icon.svg";
 import Button from "./button";
 import spiral from "../assets/spiral2.svg";
+import {
+  FaWhatsapp,
+  FaGithub,
+  FaEnvelope,
+  FaLinkedin,
+  FaPhone,
+} from "react-icons/fa";
 
 export default function FooterSection() {
   return (
@@ -25,6 +32,8 @@ export default function FooterSection() {
             ease: "easeInOut",
           }}
           bg="bg-white"
+          href="https://wa.me/+2347037863173"
+          target="_blank"
         >
           Message on whatsapp
         </Button>
@@ -35,13 +44,22 @@ export default function FooterSection() {
           className="hidden lg:flex absolute left-14 lgx:left-20 top-[40%]"
         />
         <div className="flex flex-col w-full gap-6 items-center text-white lg:justify-between lg:flex-row">
-          <span className="flex gap-5">
-            <FooterIcons icon="fa fa-phone" />
-            <FooterIcons icon="fab fa-whatsapp" />
-            <FooterIcons icon="fab fa-instagram" />
-            <FooterIcons icon="fab fa-telegram" />
-            <FooterIcons icon="fab fa-linkedin" />
-          </span>
+          <ul className="flex gap-5">
+            <FooterIcons Icon={FaPhone} href="tel:+2347037863173" />
+            <FooterIcons
+              Icon={FaWhatsapp}
+              href="https://wa.me/+2347037863173"
+            />
+            <FooterIcons
+              Icon={FaGithub}
+              href="https://github.com/vickynina006"
+            />
+            <FooterIcons Icon={FaEnvelope} href="mailto:vickynina006.com" />
+            <FooterIcons
+              Icon={FaLinkedin}
+              href="https://www.linkedin.com/in/nweke-victoria-2b35551b5"
+            />
+          </ul>
           <p>© 2025. Built by Victoria.</p>
         </div>
       </div>
@@ -49,13 +67,16 @@ export default function FooterSection() {
   );
 }
 
-export function FooterIcons({ href, icon }) {
+export function FooterIcons({ href, Icon }) {
   return (
-    <a
-      href={href}
-      className="cursor-pointer w-7 h-7 flex items-center justify-center outline rounded-full outline-1 text-slate-100 outline-slate-100 hover:text-violet-200 hover:outline-violet-200"
-    >
-      <i className={`${icon} text-xs  `}></i>
-    </a>
+    <li>
+      <a
+        href={href}
+        target="_blank"
+        className="cursor-pointer w-7 h-7 flex items-center justify-center outline rounded-full outline-1 text-slate-100 outline-slate-100 hover:text-violet-200 hover:outline-violet-200"
+      >
+        <Icon className="text-xs" />
+      </a>
+    </li>
   );
 }

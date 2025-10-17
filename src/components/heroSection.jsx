@@ -7,7 +7,7 @@ import pencil from "../assets/pencil-icon.svg";
 import spiral from "../assets/spiral-icon.svg";
 import profilepic from "../assets/profilepic1.png";
 import WaveMobile, { WaveDesktop } from "./waveSvg";
-// import { HeroAboutdata } from "../heroAboutdata.js";
+
 import HeroAbout from "./heroAbout";
 import cvIcon from "../assets/cv-icon.svg";
 import aboutIcon from "../assets/about-icon.svg";
@@ -17,33 +17,35 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   const heroAboutdata = [
     {
-      src: cvIcon,
-      title: "My CV",
-      description: "Check out some professional details about me ",
-      bg: "bg-buttonBlue",
-    },
-    {
-      src: aboutIcon,
-      title: "My Toolbox",
-      description: "Check out the tools I build with ",
-      bg: "bg-buttonYellow",
-      href: "#tools",
-    },
-    {
       src: contactIcon,
       title: "Contact Me",
       description: "Get in touch with me ",
       bg: "bg-buttonGreen",
       href: "#contact",
     },
+    {
+      src: cvIcon,
+      title: "My Toolbox",
+      description: "Check out the tools I build with ",
+      bg: "bg-buttonBlue",
+      href: "#tools",
+    },
+    {
+      src: aboutIcon,
+
+      title: "My CV",
+      description: "Check out some professional details about me ",
+      bg: "bg-buttonYellow",
+      href: "",
+    },
   ];
 
   const h1Styles =
-    "text-blacky text-3xl smx:text-[2.7rem]  md:text-6xl lgx:text-[5.18rem]  font-semibold text-center overflow-hidden";
+    "text-blacky text-3xl smx:text-[2.68rem]  md:text-6xl  lgx:text-[5rem]  font-semibold text-center overflow-hidden";
 
   return (
     <section className="flex  flex-col">
-      <div className="flex bg-backgroundpurple smx:px-2 pb-48 md:px-5 lg:py-16 ">
+      <div className="flex bg-backgroundpurple smx:px-2 pb-48  md:px-5 lg:py-16 ">
         <HeroSideDivs
           animate={{ scale: [0.97, 1, 0.97, 1, 0.97] }}
           transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
@@ -54,8 +56,8 @@ export default function HeroSection() {
         />
 
         <div className="w-full px-2  lg:w-[70%] ">
-          <div className="smx:space-y-3 ">
-            <div className="flex flex-col flex-wrap smx:space-y-5 justify-center items-center pt-2 md:space-y-0 sm:flex-row">
+          <div className="smx:space-y-3 sm:space-y-0">
+            <div className="flex flex-col flex-wrap smx:space-y-5 justify-center items-center pt-2 sm:space-y-0 sm:flex-row">
               <div className="flex flex-col-reverse  items-center sm:flex-row">
                 <div className="overflow-hidden">
                   <motion.h1
@@ -88,7 +90,7 @@ export default function HeroSection() {
                 <motion.h1
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 0.8, delay: 0.7 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
                   className={h1Styles}
                 >
                   {" "}
@@ -99,7 +101,7 @@ export default function HeroSection() {
             <motion.h1
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
+              transition={{ duration: 0.8, delay: 0.9 }}
               className={`${h1Styles} leading-tight`}
             >
               a Frontend Developer.
@@ -107,9 +109,9 @@ export default function HeroSection() {
           </div>
 
           <motion.p
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0.1, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
+            transition={{ duration: 0.8, delay: 1 }}
             className="pt-4 text-blacky text-2xl text-center leading-relaxed md:pt-7"
           >
             I strive to create meaningful and engaging web experiences that

@@ -16,13 +16,14 @@ export function Navdot() {
   );
 }
 
-export function Navicon({ href, icon }) {
+export function Navicon({ href, Icon }) {
   return (
     <a
       href={href}
+      target="_blank"
       className="flex cursor-pointer px-2 py-[0.5rem] outline rounded-lg outline-1 outline-blacky shadow-buttonshadow hover:bg-slate-100"
     >
-      <i className={`${icon} text-[1.2rem] `}></i>
+      <Icon className="text-[1.2rem]" />
     </a>
   );
 }
