@@ -83,6 +83,7 @@ export default function HeroSection() {
                     src={profilepic}
                     alt="profile picture"
                     className="w-full h-full object-cover "
+                    fetchpriority="high"
                   />
                 </motion.div>
               </div>
