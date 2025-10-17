@@ -33,7 +33,7 @@ export default function Tools() {
         </p>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, scale: 0.7 }}
+        initial={{ opacity: 0.1, scale: 0.7 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ amount: 1, once: true }}
         transition={{ duration: 0.8 }}
