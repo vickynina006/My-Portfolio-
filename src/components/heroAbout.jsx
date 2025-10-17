@@ -18,7 +18,7 @@ export default function HeroAbout({ heroAboutdata, href, i }) {
       <motion.a
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 600 }}
-        href={href ? heroAboutdata.href : undefined}
+        href={heroAboutdata.href}
         className={`px-3.5 py-2.5 rounded-full ${heroAboutdata.bg} outline outline-1 outline-blacky`}
       >
         <img src={arrowIcon} alt="arrow" />

@@ -1,4 +1,6 @@
-import projectImg from "../assets/projectsimg.jpg";
+import korapic from "../assets/kora.png";
+import audiencepic from "../assets/audiencepic.png";
+import cyberizepic from "../assets/cyberize.png";
 import ProjectDivs from "./projectDivs";
 import { motion } from "framer-motion";
 
@@ -28,18 +30,18 @@ export default function ProjectSection() {
       <div className="space-y-10">
         <ProjectDivs
           title="Kora"
-          description="Kora is an e-commerce website that specializes in selliing, caps, perfume amd interiors. Kora is dedidcated to providing, quality, durable and luxury products to its customers."
-          src={projectImg}
+          description="Kora is an e-commerce brand dedicated to curating quality and luxurious pieces, from timeless caps and captivating perfumes to elegant interiors. Every product is thoughtfully selected to reflect style and lasting value, helping you create a lifestyle that feels as good as it looks."
+          src={korapic}
         />
         <ProjectDivs
           title="Cyberize Website"
           description="Cyberize is a forward-thinking tech company specializing in innovative digital solutions and automation services that drive business growth. Its focus is on creating efficient and scalable technology, tailored to meet modern organizational challenges in a rapidly evolving digital landscape."
-          src={projectImg}
+          src={cyberizepic}
         />
         <ProjectDivs
-          title="Fylo's Landing Page"
-          description="I re-created the frontend of Fylo's landing page because I was captivated by its stunning design and intuitive interface. Building the entire frontend was exciting. I explored modern web technologies in bringing a vibrant, user-friendly experience to life."
-          src={projectImg}
+          title="Audience"
+          description="Audience is a digital platform that helps brands, creators, and businesses grow their online presence. It’s designed to boost visibility and drive engagement, thereby increasing conversion through a modern, and user-focused interface."
+          src={audiencepic}
         />
       </div>
     </section>

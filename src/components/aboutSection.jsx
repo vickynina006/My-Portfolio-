@@ -49,8 +49,8 @@ export default function AboutSection() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.3, once: true }}
-          transition={{ duration: 0.8 }}
+          viewport={{ amount: 0.5, once: true }}
+          transition={{ duration: 1 }}
           className="w-full my-auto space-y-5 smx:p-5 lg:w-[55%]  "
         >
           <h1 className="font-medium text-2xl smx:text-4xl md:text-[3rem] ">
@@ -72,15 +72,20 @@ export default function AboutSection() {
             />
             <AboutDIv title1="Rapid Solutions" title2="Talent-focused" />
           </div>
-          <Button bg="bg-white">Learn More</Button>
+          <Button href="#more" bg="bg-white">
+            Learn More
+          </Button>
         </motion.div>
       </div>
-      <div className="bg-backgroundpurple text-textblack flex flex-col items-center px-5 py-10 ">
+      <div
+        id="more"
+        className="bg-backgroundpurple text-textblack flex flex-col items-center px-5 py-10 "
+      >
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.3, once: true }}
-          transition={{ duration: 0.8 }}
+          viewport={{ amount: 0.5, once: true }}
+          transition={{ duration: 1 }}
           className="flex flex-col items-center  lg:px-28 lgx:px-48 gap-3 "
         >
           <h1 className="text-2xl font-bold md:text-4xl lg:font-semibold">

@@ -1,6 +1,8 @@
 import Navlist, { Navdot, Navicon } from "./navlist";
 import { useState } from "react";
 import NavModal from "./navModal";
+import { FaWhatsapp, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +29,9 @@ export default function Navbar() {
         </ul>
         <div className="flex gap-3">
           <div className="hidden space-x-3 sm:flex">
-            <Navicon icon="fab fa-whatsapp" />
-            <Navicon icon="fab fa-instagram" />
-            <Navicon icon="fab fa-telegram" />
+            <Navicon Icon={FaWhatsapp} href="https://wa.me/+2347037863173" />
+            <Navicon Icon={FaGithub} href="https://github.com/vickynina006" />
+            <Navicon Icon={FaXTwitter} href="https://twitter.com/Vhe010" />
           </div>
           <div
             onClick={() => setIsOpen(!isOpen)}

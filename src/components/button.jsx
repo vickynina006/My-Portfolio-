@@ -14,11 +14,11 @@ export default function Button({ href, children, bg, ...props }) {
   );
 }
 
-export function ToolsButton({ icon, title }) {
+export function ToolsButton({ Icon, title }) {
   return (
-    <button className="flex justify-center items-center py-2 rounded-lg shadow-buttonshadow2 outline outline-1 gap-1.5 outline-blacky">
-      <i className={`text-sm ${icon} md:text-xl`} />
-      <h1 className=" text-sm md:text-lg">{title}</h1>
+    <button className="flex justify-center items-center px-1 py-2 rounded-lg shadow-buttonshadow2 outline outline-1 gap-1.5 outline-blacky">
+      <Icon className="text-sm md:text-[1.1rem]" />
+      <h1 className=" text-sm md:text-[0.9rem]">{title}</h1>
     </button>
   );
 }

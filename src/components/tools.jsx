@@ -1,5 +1,16 @@
 import { ToolsButton } from "./button";
 import { motion } from "framer-motion";
+import { SiCanva, SiTailwindcss, SiFramer } from "react-icons/si";
+
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaGitAlt,
+  FaJs,
+  FaGithub,
+  FaWordpress,
+} from "react-icons/fa";
 
 export default function Tools() {
   return (
@@ -28,16 +39,16 @@ export default function Tools() {
         transition={{ duration: 0.8 }}
         className="grid grid-cols-2 p-3 w-full my-20 mx-auto gap-4 rounded-3xl outline outline-1 outline-blacky md:grid-cols-3  md:w-[70%] lgx:w-[60%] lg:grid-cols-5 "
       >
-        <ToolsButton title="React" icon="fab fa-react" />
-        <ToolsButton title="Html" icon="fab fa-html5" />
-        <ToolsButton title="CSS" icon="fab fa-css3-alt" />
-        <ToolsButton title="Git" icon="fab fa-git-alt" />
-        <ToolsButton title="Tailwind CSS" />
-        <ToolsButton title="JavaScript" icon="fab fa-js" />
-        <ToolsButton title="GitHub" icon="fab fa-github" />
-        <ToolsButton title="WordPress" icon="fab fa-wordpress" />
-        <ToolsButton title="Canva" icon="fas fa-palette" />
-        <ToolsButton title="Framer-motion" />
+        <ToolsButton title="React" Icon={FaReact} />
+        <ToolsButton title="Html" Icon={FaHtml5} />
+        <ToolsButton title="CSS" Icon={FaCss3Alt} />
+        <ToolsButton title="Git" Icon={FaGitAlt} />
+        <ToolsButton title="Tailwind CSS" Icon={SiTailwindcss} />
+        <ToolsButton title="JavaScript" Icon={FaJs} />
+        <ToolsButton title="GitHub" Icon={FaGithub} />
+        <ToolsButton title="WordPress" Icon={FaWordpress} />
+        <ToolsButton title="Canva" Icon={SiCanva} />
+        <ToolsButton title="Framer-motion" Icon={SiFramer} />
       </motion.div>
     </section>
   );

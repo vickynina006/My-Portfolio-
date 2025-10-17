@@ -24,7 +24,7 @@ export function AboutButton({ title, img, i }) {
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ amount: 0.3, once: "true" }}
       transition={{ duration: 0.4, delay: i * 0.15 }}
-      className="flex  gap-2 py-3 px-6 rounded-full font-medium text-2xl bg-white outline outline-blacky outline-1"
+      className="flex  gap-2 py-3 px-6 rounded-full font-medium text-[1.45rem] bg-white outline outline-blacky outline-1"
     >
       <img src={img} alt="" />
       <span>{title}</span>
