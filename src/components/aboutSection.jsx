@@ -1,6 +1,6 @@
 import Button from "./button";
 import { WaveDesktopTop, WaveMobileTop } from "./waveSvg";
-import profilePic2 from "../assets/profilePic2.png";
+import profilePic2 from "../assets/profilepic2.png";
 import heartIcon from "../assets/heart-icon.svg";
 import lighteningIcon from "../assets/lightening-icon.svg";
 import star1 from "../assets/star1.svg";
