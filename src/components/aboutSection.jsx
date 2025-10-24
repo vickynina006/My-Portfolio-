@@ -42,41 +42,51 @@ export default function AboutSection() {
       <WaveMobileTop classname=" text-backgroundpurple w-full h-max  lg:hidden " />
       <WaveDesktopTop classname="hidden text-backgroundpurple w-full  h-max lg:flex " />
 
-      <div className="flex flex-col mt-0 py-10 px-3 gap-10 text-textblack bg-backgroundpurple lg:gap-14 lg:px-8 lg:flex-row">
-        <div className="w-full p-5 lg:w-[45%]">
-          <img src={profilePic2} alt="" className="w-full h-auto" />
-        </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.5, once: true }}
-          transition={{ duration: 1 }}
-          className="w-full my-auto space-y-5 smx:p-5 lg:w-[55%]  "
-        >
-          <h1 className="font-medium text-2xl smx:text-4xl md:text-[3rem] ">
-            More about me
-          </h1>
-          <p className="text-lg">
-            I am a Frontend focused developer who likes to craft solid and
-            scalable frontend products with great user experience. I am
-            currently journeying into becoming a fullstack Engineer.
-          </p>
-          <p className="text-lg">
-            I am also keen to developing real world solutions and making web
-            experience aesthetically pleasing and easy to navigate.
-          </p>
-          <div className="flex flex-col pb-5 space-y-4 lg:space-y-0  lg:flex-row">
-            <AboutDIv
-              title1="Innovative Thinking"
-              title2="Wholistic Approach"
-            />
-            <AboutDIv title1="Rapid Solutions" title2="Talent-focused" />
+      <div className="px-3 smx:px-7 py-16 bg-backgroundpurple md:px-14 md:py-20">
+        <div className="outline outline-1 outline-blacky rounded-3xl flex flex-col  py-10 px-3 smx:px-4 text-textblack bg-backgroundpurple gap-10 md:px-10 lgx:gap-14 md:py-14 lg:px-14 lgx:flex-row lgx:items-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ amount: 0.5, once: true }}
+            transition={{ duration: 1 }}
+            className="w-full my-auto space-y-5  lgx:w-[55%]  "
+          >
+            <h1 className="font-medium text-2xl smx:text-4xl md:text-[3rem] ">
+              More about me
+            </h1>
+            <p className="text-lg">
+              I am a Frontend developer who likes to craft solid and scalable
+              frontend products with great user experience. Beyond coding, I
+              spend time brainstorming real-world solutions. I am currently
+              expanding my journey into full-stack development, so as to bring
+              complete solutions to life.
+            </p>
+            <p className="text-lg">
+              I hold a First-Class B.Sc. (Honours) degree and have always been
+              driven by curiosity and creativity. I love building, and learning
+              along the way. I am deeply passionate about growth, both as a
+              developer and as a person.
+            </p>
+          </motion.div>
+          <div className="w-full space-y-4 p-5 lgx:w-[45%]">
+            <div className=" pb-5 space-y-6  ">
+              <AboutDIv
+                title1="Innovative Thinking"
+                title2="Attention to Detail"
+              />
+              <AboutDIv title1="Rapid Solutions" title2="Critical Thinking" />
+              <AboutDIv
+                title1="Collaborative Mindset"
+                title2="Attention to Detail"
+              />
+            </div>
+            <Button href="#more" bg="bg-white">
+              Learn More
+            </Button>
           </div>
-          <Button href="#more" bg="bg-white">
-            Learn More
-          </Button>
-        </motion.div>
+        </div>
       </div>
+
       <div
         id="more"
         className="bg-backgroundpurple text-textblack flex flex-col items-center px-5 py-10 "

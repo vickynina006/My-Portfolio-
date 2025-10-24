@@ -7,7 +7,7 @@ export default function Button({ href, children, bg, ...props }) {
       transition={{ type: "spring", stiffness: 500 }}
       href={href}
       {...props}
-      className={`cursor-pointer inline-flex  py-3.5 px-5 rounded-lg font-medium  outline outline-1 outline-blacky ${bg} shadow-buttonshadow2 hover:bg-slate-100`}
+      className={`cursor-pointer inline-flex  py-3 px-4 rounded-lg font-medium  outline outline-1 outline-blacky ${bg} shadow-buttonshadow2 hover:bg-slate-100`}
     >
       {children}
     </motion.a>
