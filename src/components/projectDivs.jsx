@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import Button from "./button";
 import { motion } from "framer-motion";
 
-export default function ProjectDivs({ title, description, src }) {
+export default function ProjectDivs({ title, description, src, href2, href1 }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -15,8 +15,12 @@ export default function ProjectDivs({ title, description, src }) {
         <h1 className="text-3xl font-medium">{title}</h1>
         <p className="text-lg ">{description}</p>
         <div className="flex  items-center justify-between">
-          <Button href="https://kora-lyart.vercel.app/">View Demo</Button>
-          <FaGithub className="text-3xl" title="view code on github" />
+          <Button href={href1} target="_blank">
+            View Demo
+          </Button>
+          <a href={href2} target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-3xl" title="view code on github" />
+          </a>
         </div>
       </div>
       <div className="w-full outline outline-1 outline-blacky rounded-2xl overflow-hidden aspect-[16/12] lg:w-[53%]">

@@ -43,7 +43,7 @@ export default function AboutSection() {
       <WaveDesktopTop classname="hidden text-backgroundpurple w-full  h-max lg:flex " />
 
       <div className="px-3 smx:px-7 py-16 bg-backgroundpurple md:px-14 md:py-20">
-        <div className="outline outline-1 outline-blacky rounded-3xl flex flex-col  py-10 px-3 smx:px-4 text-textblack bg-backgroundpurple gap-10 md:px-10 lgx:gap-14 md:py-14 lg:px-14 lgx:flex-row lgx:items-center">
+        <div className="outline outline-1 outline-blacky rounded-3xl flex flex-col  py-10 px-3 smx:px-4 text-textblack bg-backgroundpurple gap-10 md:px-10 lgx:gap-14 md:py-14 lg:px-14 lg:py-20 lgx:flex-row lgx:items-center">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -76,8 +76,8 @@ export default function AboutSection() {
               />
               <AboutDIv title1="Rapid Solutions" title2="Critical Thinking" />
               <AboutDIv
-                title1="Collaborative Mindset"
-                title2="Attention to Detail"
+                title1="Quality Focused"
+                title2="Collaborative Mindset"
               />
             </div>
             <Button href="#more" bg="bg-white">

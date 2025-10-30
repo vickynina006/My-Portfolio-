@@ -32,16 +32,21 @@ export default function ProjectSection() {
           title="Kora"
           description="Kora is an e-commerce brand dedicated to curating quality and luxurious pieces, from timeless caps and captivating perfumes to elegant interiors. Every product is thoughtfully selected to reflect style and lasting value, helping you create a lifestyle that feels as good as it looks."
           src={korapic}
+          href1="https://kora-lyart.vercel.app/"
+          href2="https://github.com/vickynina006/kora"
         />
         <ProjectDivs
-          title="Cyberize Website"
+          title="Cyberize"
           description="Cyberize is a forward-thinking tech company specializing in innovative digital solutions and automation services that drive business growth. Its focus is on creating efficient and scalable technology, tailored to meet modern organizational challenges in a rapidly evolving digital landscape."
           src={cyberizepic}
+          href1="https://cyberize.vercel.app/"
+          href2="https://github.com/vickynina006/cyberize-website"
         />
         <ProjectDivs
           title="Audience"
           description="Audience is a digital platform that helps brands, creators, and businesses grow their online presence. It’s designed to boost visibility and drive engagement, thereby increasing conversion through a modern, and user-focused interface."
           src={audiencepic}
+          href2="https://github.com/vickynina006/Audience"
         />
       </div>
     </section>

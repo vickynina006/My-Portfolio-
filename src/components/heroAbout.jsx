@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import arrowIcon from "../assets/arrow-icon.svg";
 
-export default function HeroAbout({ heroAboutdata, href, i }) {
+export default function HeroAbout({ heroAboutdata, i }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30, scale: 0.9 }}
@@ -19,6 +19,8 @@ export default function HeroAbout({ heroAboutdata, href, i }) {
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 600 }}
         href={heroAboutdata.href}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`px-3.5 py-2.5 rounded-full ${heroAboutdata.bg} outline outline-1 outline-blacky`}
       >
         <img src={arrowIcon} alt="arrow" />

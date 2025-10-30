@@ -36,7 +36,7 @@ export default function HeroSection() {
       title: "My CV",
       description: "Check out some professional details about me ",
       bg: "bg-buttonYellow",
-      href: "",
+      href: "/CV_Victoria_nweke.pdf",
     },
   ];
 
