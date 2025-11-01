@@ -5,7 +5,6 @@ import sparkle from "../assets/sparkle-icon.svg";
 import hand from "../assets/hand-icon.svg";
 import pencil from "../assets/pencil-icon.svg";
 import spiral from "../assets/spiral-icon.svg";
-import profilepic from "../assets/profilepic1.png";
 import WaveMobile, { WaveDesktop } from "./waveSvg";
 
 import HeroAbout from "./heroAbout";
@@ -37,6 +36,7 @@ export default function HeroSection() {
       description: "Check out some professional details about me ",
       bg: "bg-buttonYellow",
       href: "/CV_Victoria_nweke.pdf",
+      target: true,
     },
   ];
 
@@ -80,7 +80,7 @@ export default function HeroSection() {
                   className="flex overflow-hidden mx-auto my-4 w-24 h-24 outline outline-1 bg-slate-500 rounded-full outline-blacky sm:m-3 sm:h-16 sm:w-16   lg:w-24 lg:h-24"
                 >
                   <img
-                    src={profilepic}
+                    src="/profilepic1.png"
                     alt="profile picture"
                     className="w-full h-full object-cover "
                     fetchpriority="high"
