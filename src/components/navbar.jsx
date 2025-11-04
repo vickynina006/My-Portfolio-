@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className=" bg-backgroundpurple font-bricolage  py-[4.1rem] md:py-[4.4rem]">
-      <div className="fixed top-5 left-0 right-0 z-50 flex mx-1 text-textblack rounded-full outline outline-1 bg-white outline-blacky justify-between items-center px-4 py-1 smx:px-8 smx:mx-4 smx:py-3  md:px-12 md:mx-12">
+      <div className="fixed max-w-full top-5 left-0 right-0 z-50 flex mx-1 text-textblack rounded-full outline outline-1 bg-white outline-blacky justify-between items-center px-4 py-1 smx:px-8 smx:mx-4 smx:py-3  md:px-12 md:mx-12">
         <div>
           <h1 className="text-[1.73rem] font-semibold">Vhefolio</h1>
         </div>
