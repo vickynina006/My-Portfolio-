@@ -32,10 +32,10 @@ export default function HeroSection() {
     {
       src: aboutIcon,
 
-      title: "My CV",
+      title: "My Resume",
       description: "Check out some professional details about me ",
       bg: "bg-buttonYellow",
-      href: "/CV_Victoria_nweke.pdf",
+      href: "/CV_current.pdf",
       target: true,
     },
   ];

@@ -1,6 +1,14 @@
 import { ToolsButton } from "./button";
 import { motion } from "framer-motion";
-import { SiCanva, SiTailwindcss, SiFramer } from "react-icons/si";
+import {
+  SiCanva,
+  SiTailwindcss,
+  SiFramer,
+  SiNodedotjs,
+  SiRedux,
+  SiExpress,
+  SiMongodb,
+} from "react-icons/si";
 
 import {
   FaReact,
@@ -33,7 +41,7 @@ export default function Tools() {
         </p>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, scale: 0.5}}
+        initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ amount: 1, once: true }}
         transition={{ duration: 0.8 }}
@@ -49,6 +57,10 @@ export default function Tools() {
         <ToolsButton title="WordPress" Icon={FaWordpress} />
         <ToolsButton title="Canva" Icon={SiCanva} />
         <ToolsButton title="Framer-motion" Icon={SiFramer} />
+        <ToolsButton title="Redux" Icon={SiRedux} />
+        <ToolsButton title="Node.js" Icon={SiNodedotjs} />
+        <ToolsButton title="Express.js" Icon={SiExpress} />
+        <ToolsButton title="MongoDB" Icon={SiMongodb} />
       </motion.div>
     </section>
   );
