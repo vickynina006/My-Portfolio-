@@ -1,6 +1,6 @@
 import korapic from "../assets/kora.png";
 import audiencepic from "../assets/audiencepic.png";
-import cyberizepic from "../assets/cyberize.png";
+import authra from "../assets/authra.png";
 import ProjectDivs from "./projectDivs";
 import { motion } from "framer-motion";
 
@@ -38,7 +38,7 @@ export default function ProjectSection() {
         <ProjectDivs
           title="Cyberize"
           description="Cyberize is a forward-thinking tech company specializing in innovative digital solutions and automation services that drive business growth. Its focus is on creating efficient and scalable technology, tailored to meet modern organizational challenges in a rapidly evolving digital landscape."
-          src={cyberizepic}
+          src={authra}
           href1="https://cyberize.vercel.app/"
           href2="https://github.com/vickynina006/cyberize-website"
         />
