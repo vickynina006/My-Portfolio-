@@ -36,11 +36,11 @@ export default function ProjectSection() {
           href2="https://github.com/vickynina006/kora"
         />
         <ProjectDivs
-          title="Cyberize"
-          description="Cyberize is a forward-thinking tech company specializing in innovative digital solutions and automation services that drive business growth. Its focus is on creating efficient and scalable technology, tailored to meet modern organizational challenges in a rapidly evolving digital landscape."
+          title="Authra"
+          description="Authra is a secure MERN-stack authentication system built with Express, React, JWT, and cookie-parser. It provides complete user flows including signup, login, logout, email verification, and password reset using JWT and secure httpOnly cookies, with ongoing work toward making the core logic reusable via npm for easier integration in other projects."
           src={authra}
-          href1="https://cyberize.vercel.app/"
-          href2="https://github.com/vickynina006/cyberize-website"
+          href1="https://authra-ten.vercel.app"
+          href2="https://github.com/vickynina006/mern-auth"
         />
         <ProjectDivs
           title="Audience"
