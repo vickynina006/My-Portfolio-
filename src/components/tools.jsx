@@ -1,13 +1,19 @@
 import { ToolsButton } from "./button";
 import { motion } from "framer-motion";
 import {
-  SiCanva,
+  SiLinux,
   SiTailwindcss,
   SiFramer,
   SiNodedotjs,
   SiRedux,
   SiExpress,
   SiMongodb,
+  SiGraphql,
+  SiGithub,
+  SiTerraform,
+  SiKubernetes,
+  SiTypescript,
+  SiNextdotjs,
 } from "react-icons/si";
 
 import {
@@ -17,10 +23,35 @@ import {
   FaGitAlt,
   FaJs,
   FaGithub,
-  FaWordpress,
+  FaDocker,
+  FaAws,
 } from "react-icons/fa";
 
 export default function Tools() {
+  const tools = [
+    { title: "React", Icon: FaReact },
+    { title: "Html", Icon: FaHtml5 },
+    { title: "CSS", Icon: FaCss3Alt },
+    { title: "Git", Icon: FaGitAlt },
+    {title: "Next.js", Icon: SiNextdotjs},
+    {title: "TypeScript", Icon: SiTypescript},
+    { title: "Tailwind CSS", Icon: SiTailwindcss },
+    { title: "JavaScript", Icon: FaJs },
+    { title: "GitHub", Icon: FaGithub },
+    { title: "Docker", Icon: FaDocker },
+    { title: "Linux", Icon: SiLinux },
+    { title: "Framer-motion", Icon: SiFramer },
+    { title: "Redux", Icon: SiRedux },
+    { title: "Node.js", Icon: SiNodedotjs },
+    { title: "Express.js", Icon: SiExpress },
+    { title: "MongoDB", Icon: SiMongodb },
+    {title: "GraphQL", Icon: SiGraphql},
+    { title: "Github actions", Icon: SiGithub },
+    { title: "Terraform", Icon: SiTerraform },
+    // { title: "AWS", Icon: FaAws },
+    { title: "Kubernetes", Icon: SiKubernetes },
+
+  ];
   return (
     <section className="py-10 px-4" id="tools">
       <motion.div
@@ -47,21 +78,11 @@ export default function Tools() {
         transition={{ duration: 0.8 }}
         className="grid grid-cols-2 p-3 w-full my-20 mx-auto gap-4 rounded-3xl outline outline-1 outline-blacky md:grid-cols-3  md:w-[70%] lgx:w-[60%] lg:grid-cols-5 "
       >
-        <ToolsButton title="React" Icon={FaReact} />
-        <ToolsButton title="Html" Icon={FaHtml5} />
-        <ToolsButton title="CSS" Icon={FaCss3Alt} />
-        <ToolsButton title="Git" Icon={FaGitAlt} />
-        <ToolsButton title="Tailwind CSS" Icon={SiTailwindcss} />
-        <ToolsButton title="JavaScript" Icon={FaJs} />
-        <ToolsButton title="GitHub" Icon={FaGithub} />
-        <ToolsButton title="WordPress" Icon={FaWordpress} />
-        <ToolsButton title="Canva" Icon={SiCanva} />
-        <ToolsButton title="Framer-motion" Icon={SiFramer} />
-        <ToolsButton title="Redux" Icon={SiRedux} />
-        <ToolsButton title="Node.js" Icon={SiNodedotjs} />
-        <ToolsButton title="Express.js" Icon={SiExpress} />
-        <ToolsButton title="MongoDB" Icon={SiMongodb} />
+        {tools.map((tool) => (
+          <ToolsButton key={tool.title} title={tool.title} Icon={tool.Icon} />
+        ))}
       </motion.div>
     </section>
   );
 }
+

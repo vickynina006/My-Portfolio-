@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className=" bg-backgroundpurple font-bricolage  py-[4.1rem] md:py-[4.4rem]">
-      <div className="fixed max-w-full top-5 left-0 right-0 z-50 flex mx-1 text-textblack rounded-full outline outline-1 bg-white outline-blacky justify-between items-center px-4 py-1 smx:px-8 smx:mx-4 smx:py-3  md:px-12 md:mx-12">
+      <div className="fixed max-w-full top-5 left-0 right-0 z-50 flex mx-1 text-textblack rounded-full outline outline-1 bg-white outline-blacky justify-between items-center px-4 py-1 smx:px-8 smx:mx-4 smx:py-3 md:px-12 md:mx-12">
         <div>
           <h1 className="text-[1.73rem] font-semibold">Vhefolio</h1>
         </div>
@@ -29,11 +29,23 @@ export default function Navbar() {
         </ul>
         <div className="flex gap-3">
           <div className="hidden space-x-3 sm:flex">
-            <Navicon Icon={FaWhatsapp} href="https://wa.me/+2347037863173" />
-            <Navicon Icon={FaGithub} href="https://github.com/vickynina006" />
-            <Navicon Icon={FaXTwitter} href="https://twitter.com/Vhe010" />
+            <Navicon
+              Icon={FaWhatsapp}
+              href="https://wa.me/+2347037863173"
+            />
+            <Navicon
+              Icon={FaGithub}
+              href="https://github.com/vickynina006"
+            />
+            <Navicon
+              Icon={FaXTwitter}
+              href="https://twitter.com/Vhe010"
+            />
           </div>
-          <div
+          <button
+            type="button"
+            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
             className="flex flex-col justify-center gap-1 cursor-pointer px-[0.4rem] py-[0.5rem] z-50 outline  outline-1 outline-blacky rounded-lg shadow-buttonshadow hover:bg-slate-100  lg:hidden "
           >
@@ -48,7 +60,7 @@ export default function Navbar() {
                 isOpen && "-rotate-45 -translate-y-1.5"
               }`}
             ></span>
-          </div>
+          </button>
         </div>
       </div>
       {isOpen && <NavModal setIsOpen={setIsOpen} />}

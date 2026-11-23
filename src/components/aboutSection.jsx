@@ -13,11 +13,11 @@ import AboutDIv, { AboutButton } from "./aboutdiv";
 export default function AboutSection() {
   const aboutButton = [
     {
-      title: "Web Development",
+      title: "Frontend Development",
       img: heartIcon,
     },
     {
-      title: "UI Implementation",
+      title: "Performance Optimization",
       img: star1,
     },
     {
@@ -29,7 +29,7 @@ export default function AboutSection() {
       img: lighteningIcon,
     },
     {
-      title: "Perfomance Boost",
+      title: "Backend Development",
       img: star3,
     },
     {
@@ -43,7 +43,7 @@ export default function AboutSection() {
       <WaveDesktopTop classname="hidden text-backgroundpurple w-full  h-max lg:flex " />
 
       <div className="px-3 smx:px-7 py-16 bg-backgroundpurple md:px-14 md:py-20">
-        <div className="outline outline-1 outline-blacky rounded-3xl flex flex-col  py-10 px-3 smx:px-4 text-textblack bg-backgroundpurple gap-10 md:px-10 lgx:gap-14 md:py-14 lg:px-14 lg:py-20 lgx:flex-row lgx:items-center">
+        <div className="outline outline-1 outline-blacky rounded-3xl flex flex-col py-10 px-3 smx:px-4 text-textblack bg-backgroundpurple gap-10 md:px-10 lgx:gap-14 md:py-14 lg:px-14 lg:py-20 lgx:flex-row lgx:items-center">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -55,11 +55,7 @@ export default function AboutSection() {
               More about me
             </h1>
             <p className="text-lg">
-              I am a Frontend developer who likes to craft solid and scalable
-              frontend products with great user experience. Beyond coding, I
-              spend time brainstorming real-world solutions. I am currently
-              expanding my journey into full-stack development, so as to bring
-              complete solutions to life.
+              I am a Software Engineer with deep roots in frontend development. I enjoy crafting solid, scalable products that solve real problems and deliver great user experiences. My experience also extends to backend development, where I build and integrate the systems that bring complete products together. I am particularly interested in making software reliable and efficient.
             </p>
             <p className="text-lg">
               I hold a First-Class B.Sc. (Honours) degree and have always been
@@ -89,7 +85,7 @@ export default function AboutSection() {
 
       <div
         id="more"
-        className="bg-backgroundpurple text-textblack flex flex-col items-center px-5 py-10 "
+        className="bg-backgroundpurple text-textblack flex flex-col items-center px-5 py-10"
       >
         <motion.div
           initial={{ opacity: 0 }}

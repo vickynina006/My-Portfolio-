@@ -35,7 +35,7 @@ export default function HeroSection() {
       title: "My Resume",
       description: "Check out some professional details about me ",
       bg: "bg-buttonYellow",
-      href: "/Victoria_ty.pdf",
+      href: "/Victoria_ty.pdf?v=20261123",
       target: true,
     },
   ];
@@ -83,7 +83,7 @@ export default function HeroSection() {
                     src="/profilepic1.png"
                     alt="profile picture"
                     className="w-full h-full object-cover "
-                    fetchpriority="high"
+                    fetchPriority="high"
                   />
                 </motion.div>
               </div>
@@ -95,7 +95,7 @@ export default function HeroSection() {
                   className={h1Styles}
                 >
                   {" "}
-                  I'm Victoria,
+                  I&apos;m Victoria,
                 </motion.h1>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.9 }}
               className={`${h1Styles} leading-tight`}
             >
-              a Frontend Developer.
+              A Software Engineer.
             </motion.h1>
           </div>
 
@@ -115,9 +115,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 1 }}
             className="pt-4 text-blacky text-2xl text-center leading-relaxed md:pt-7"
           >
-            I strive to create meaningful and engaging web experiences that
-            foster a positive culture through thoughtful frontend development
-            and design.
+            I strive to create meaningful and engaging digital experiences through thoughtful engineering, combining modern frontend and backend technologies to build applications that are scalable, and reliable.
           </motion.p>
         </div>
 
