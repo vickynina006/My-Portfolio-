@@ -35,7 +35,7 @@ export default function HeroSection() {
       title: "My Resume",
       description: "Check out some professional details about me ",
       bg: "bg-buttonYellow",
-      href: "/Victoria_ty.pdf?v=20261123",
+      href: "/Victoria_ty.pdf",
       target: true,
     },
   ];
